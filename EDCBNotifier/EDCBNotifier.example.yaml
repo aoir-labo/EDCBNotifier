@@ -96,32 +96,34 @@
 
         # ***** 予約を追加したときに送信するメッセージ *****
         'PostAddReserve': [
-            '➕ 予約追加: $SDYYYY$/$SDMM$/$SDDD$($SDW$) $ServiceNameHankaku$ $ServiceNameHashTag$',
-            '$STHH$:$STMM$～$ETHH$:$ETMM$ $TitleHankaku$ $TitleHashTag$',
+            'RESERVE ADDED',
+            '**録画サービス:** $ServiceNameHankaku$',
+            '**放送時間:** $SDYYYY$/$SDMM$/$SDDD$($SDW$) $STHH$:$STMM$～$ETHH$:$ETMM$',
+            '**番組タイトル:** $TitleHankaku$',
         ],
-
-        # ***** 予約を変更したときに送信するメッセージ *****
         'PostChgReserve': [
-            '📢 予約変更: $SDYYYY$/$SDMM$/$SDDD$($SDW$) $ServiceNameHankaku$ $ServiceNameHashTag$',
-            '$STHH$:$STMM$～$ETHH$:$ETMM$ $TitleHankaku$ $TitleHashTag$',
+            'RESERVE CHANGED',
+            '**録画サービス:** $ServiceNameHankaku$',
+            '**放送時間:** $SDYYYY$/$SDMM$/$SDDD$($SDW$) $STHH$:$STMM$～$ETHH$:$ETMM$',
+            '**番組タイトル:** $TitleHankaku$',
         ],
-
-        # ***** 録画を開始したときに送信するメッセージ *****
         'PostRecStart': [
-            '⏺ 録画開始: $SDYYYY$/$SDMM$/$SDDD$($SDW$) $ServiceNameHankaku$ $ServiceNameHashTag$',
-            '$STHH$:$STMM$～$ETHH$:$ETMM$ $TitleHankaku$ $TitleHashTag$',
+            'RECORDING START',
+            '**録画サービス:** $ServiceNameHankaku$',
+            '**放送時間:** $STHH$:$STMM$～$ETHH$:$ETMM$',
+            '**番組タイトル:** $TitleHankaku$',
         ],
-
-        # ***** 録画を終了したときに送信するメッセージ *****
         'PostRecEnd': [
-            '⏹ 録画終了: $SDYYYY$/$SDMM$/$SDDD$($SDW$) $ServiceNameHankaku$ $ServiceNameHashTag$',
-            '$STHH$:$STMM$～$ETHH$:$ETMM$ $TitleHankaku$ $TitleHashTag$',
-            'Drop: $Drops$ Scramble: $Scrambles$ Comment: $Result$',
+            'RECORDING END',
+            '**録画サービス:** $ServiceNameHankaku$',
+            '**放送時間:** $STHH$:$STMM$～$ETHH$:$ETMM$',
+            '**番組タイトル:** $TitleHankaku$',
+            '**結果:** $Result$ (Drop: $Drops$ / Scramble: $Scrambles$)',
         ],
-
-        # ***** 更新通知が送られたときに送信するメッセージ *****
         'PostNotify': [
-            '🔔 通知: $NotifyName$ ($TimeMM$/$TimeDD$ $TimeHH$:$TimeII$:$TimeSS$)',
+            'SYSTEM NOTIFICATION',
+            '**内容:** $NotifyName$',
+            '**時刻:** $TimeMM$/$TimeDD$ $TimeHH$:$TimeII$:$TimeSS$',
         ],
     },
 
